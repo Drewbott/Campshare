@@ -18,6 +18,10 @@ firebase.initializeApp(config);
 var db = firebase.database();
 
 
+//CREATE VARs for username and password capture from form:
+
+
+
 // sign up new users
 firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
   // Handle Errors here.
