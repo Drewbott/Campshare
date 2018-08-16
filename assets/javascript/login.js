@@ -1,8 +1,8 @@
 //script inclusions required for each login HTML page
   //insert bootstrap links here
-<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
-<script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
-<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+// <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+// <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+// <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
 
 
 // initialize firebase
