@@ -1,14 +1,15 @@
 .jumbotron {
-    height: 500px;
+    height: 600px;
     width: 100%;
     margin-right: 50px;
+    background-size: cover;
 }
 .welcome {
     /* width: 25%; */
     margin-left: 50px;
 }
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -16,9 +17,13 @@
     text-align: center;
 }
 .card-body {
-    height: 350px;
+    height: 200px;
+    align-items: center;
 }
 
 .container {
     margin: 0 auto;
+<<<<<<< HEAD
+=======
 }
+>>>>>>> master
