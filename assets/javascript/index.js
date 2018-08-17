@@ -26,11 +26,9 @@ $.get(queryURL_NPS, function(response){
   setInterval(function(){
     index++
     $(".jumbotron").attr("style",'background-image: url('+ response.data[index].images[0].url+')')
-
-  },3000)
+  },15000)
 })
 
-// $(".jumbotron").css("background-image", )
 
 
 // $.ajax({
