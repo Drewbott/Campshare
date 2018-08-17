@@ -1,0 +1,21 @@
+
+.jumbotron {
+    background-image: url("https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F1600x1000%2Fpublic%2F1516134952%2Fyosemite-national-park-starbucks-COFFEEPARK0118.jpg%3Fitok%3D7SfKuiGM&w=700&q=85");
+}
+/* .navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+} */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
