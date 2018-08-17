@@ -16,9 +16,9 @@ $("#shareButton").on("click", function(event) {
     var name = $("#").val().trim();
     var location = $("#").val().trim();
     var date = $("#").val().trim();
-    var numberPeople = $("#").val().trim();;
-    var campingStyle = $("#").val().trim();;
-    var notes = $("#").val().trim();;
+    var numberPeople = $("#").val().trim();
+    var campingStyle = $("#").val().trim();
+    var notes = $("#").val().trim();
 
     var newCampsite = {
         name: name,
