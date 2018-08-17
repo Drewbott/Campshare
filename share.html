@@ -14,20 +14,6 @@
 </head>
 
 <body>
-
-    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyAONZYnyHUjy1Sng-pxNkStJ_NBkLM83Dw",
-        authDomain: "campshare-2c108.firebaseapp.com",
-        databaseURL: "https://campshare-2c108.firebaseio.com",
-        projectId: "campshare-2c108",
-        storageBucket: "campshare-2c108.appspot.com",
-        messagingSenderId: "850750063272"
-      };
-      firebase.initializeApp(config);
-    </script>
   <div class="container">
    <!-- Brand and toggle get grouped for better mobile display -->
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -75,30 +61,26 @@
       <div class="form-group">
         <h2> Share </h2>
         <label for="destination">Destination</label>
-        <input type="email" class="form-control" id="destination" aria-describedby="emailHelp" placeholder="Enter email">
+        <input type="text" class="form-control" id="destination" aria-describedby="emailHelp" placeholder="Enter email">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
       <div class="form-group">
         <label for="length">Length</label>
-        <input type="password" class="form-control" id="length" placeholder="Length of Stay">
+        <input type="text" class="form-control" id="length" placeholder="Length of Stay">
       </div>
       <div class="form-group">
           <label for="length">Space Available</label>
-          <input type="password" class="form-control" id="length" placeholder="Space Available">
+          <input type="text" class="form-control" id="spaceAvailable" placeholder="Space Available">
       </div>
       <div class="form-group">
           <label for="typeSite">Type of Site</label>
-          <input type="password" class="form-control" id="length" placeholder="Type of Site">
+          <input type="text" class="form-control" id="typeOfSite" placeholder="Type of Site">
       </div>
       <div class="form-group">
           <label for="notes">Notes</label>
-          <input type="password" class="form-control" id="length" placeholder="">
+          <input type="text" class="form-control" id="notes" placeholder="">
       </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" id="shareButton" class="btn btn-primary">Submit</button>
     </form>
    </div>
    <div class="col-md-3">
@@ -118,5 +100,7 @@
  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <!-- Bootstrap CDN -->
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+ <script src="assets/javascript/share.js"></script>
 </body>
 </html>
