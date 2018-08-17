@@ -1,14 +1,11 @@
-
-/* .navbar {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
+.jumbotron {
+    height: 500px;
     width: 100%;
-} */
+    margin-right: 50px;
+}
 .welcome {
-    float: left;
-    width: 25%;
+    /* width: 25%; */
+    margin-left: 50px;
 }
 .footer {
     position: fixed;
@@ -18,8 +15,10 @@
     color: white;
     text-align: center;
 }
+.card-body {
+    height: 350px;
+}
 
-.jumbotron {
-    float: left;
-    width: 75%;
+.container {
+    margin: 0 auto;
 }
