@@ -6,7 +6,10 @@
     left: 0;
     width: 100%;
 } */
-
+.welcome {
+    float: left;
+    width: 25%;
+}
 .footer {
     position: fixed;
     left: 0;
@@ -16,3 +19,7 @@
     text-align: center;
 }
 
+.jumbotron {
+    float: left;
+    width: 75%;
+}
