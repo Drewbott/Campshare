@@ -12,21 +12,21 @@
 // var database = firebase.database()
 
 // National Parks Service API
-var queryURL_NPS = "https://developer.nps.gov/api/v1/parks?parkCode&api_key=5cZGKFkWtjCEhTA6R4fLucsuyuPYAkLhmZgeIYbw&limit=50&fields=images"
+var queryURL_NPS = "https://developer.nps.gov/api/v1/parks?parkCode&api_key=5cZGKFkWtjCEhTA6R4fLucsuyuPYAkLhmZgeIYbw&limit=100&fields=images"
 console.log(queryURL_NPS)
 
 $.get(queryURL_NPS, function(response){
   // console.log(response.data)
   for(var i = 0; i < 50; i++){
     // response.data[i].images[0]
-    console.log(response.data[i].images[0].url)
 
   }
-  var index=0 
+  
+  var index=0
   setInterval(function(){
     index++
     // $(".jumbotron").attr("style",'background-image: url('+ response.data[index].images[0].url+')', "height:"+ "auto")
-    $(".jumbotron").css({"background-image": "url("+ response.data[index].images[1].url+')'})
+    $(".jumbotron").css({"background-image": "url("+ response.data[index].images[0].url+')'})
   },3000)
 })
 
