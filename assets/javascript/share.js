@@ -23,25 +23,18 @@ if (user) {
     console.log(displayName)
     console.log(uid) 
     $("#profileButton").text(displayName);
-    $("#profileButton").attr(href, "#")
+    $("#profileButton").attr("href", "#")
     $("#shareButton").on("click", function(event) { 
         event.preventDefault();
-        // var name = $("#").val().trim();
+        var name = displayName
         var location = $("#destination").val().trim();
         var date = $("#length").val().trim();
         var numberPeople = $("#spaceAvailable").val().trim();
         var campingStyle = $("#typeOfSite").val().trim();
         var notes = $("#notes").val().trim();
     
-        console.log(location)
-        function writeUserData(userId, name, email, imageUrl) {
-            firebase.database().ref('users/' + userId).set({
-              username: displayName,
-              email: email,
-              profile_picture : imageUrl,
-              // Add more stuff here
-            });
-            }
+        console.log(displayName)
+    
         var newCampsite = {
             name: name,
             location: location,
@@ -54,6 +47,7 @@ if (user) {
         db.ref('users/' + uid).push(newCampsite);
     
     })
+
 } else {
     // User is signed out.
     // ...
