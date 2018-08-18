@@ -8,9 +8,11 @@ var config = {
   };
   firebase.initializeApp(config);
 
-  var db = firebase.database();
+  var database = firebase.database();
 
   database.ref().on("child_added", function(snapshot) {
+
+console.log("child_added")
 
     // Variables from database values
     var displayName = snapshot.val();
@@ -18,4 +20,5 @@ var config = {
     var numberPeople = snapshot.val();
     var campingStyle = snapshot.val();    
     var notes = snapshot.val();
+
   });
