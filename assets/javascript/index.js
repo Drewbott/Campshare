@@ -16,8 +16,7 @@ var queryURL_NPS = "https://developer.nps.gov/api/v1/parks?parkCode&api_key=5cZG
 console.log(queryURL_NPS)
 
 $.get(queryURL_NPS, function(response){
-  // console.log(response.data)
-  for(var i = 0; i < 50; i++){
+  for(var i = 0; i < 100; i++){
     // response.data[i].images[0]
 
   }
@@ -28,7 +27,7 @@ $.get(queryURL_NPS, function(response){
     // $(".jumbotron").attr("style",'background-image: url('+ response.data[index].images[0].url+')', "height:"+ "auto")
     $(".jumbotron").css({"background-image": "url("+ response.data[index].images[0].url+')'})
   },3000)
-})
+});
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
