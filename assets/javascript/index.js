@@ -44,7 +44,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     console.log(displayName)
     console.log(uid) 
     $("#profileButton").text(displayName);
-    $("#profileButton").attr(href, "#")
+    $("#profileButton").attr("href", "#")
   } else {
     // User is signed out.
     // ...
