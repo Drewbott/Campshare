@@ -1,3 +1,24 @@
+html, body {
+    margin: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+#wrapper {
+    background-color: #343a40;
+    padding: 15px;
+    height: auto;
+    /* margin: 0px 100px; */
+    text-align: center;
+    color: white;
+}
+.copyright {
+    margin: 0 auto;
+}
+footer {
+    display: table-row;
+    height: 1px;
+}
 .jumbotron {
     height: 600px;
     width: 100%;
