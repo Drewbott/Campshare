@@ -16,6 +16,7 @@ var queryURL_NPS = "https://developer.nps.gov/api/v1/parks?parkCode&api_key=5cZG
 console.log(queryURL_NPS)
 
 $.get(queryURL_NPS, function(response){
+  console.log(response)
   for(var i = 0; i < 100; i++){
     // response.data[i].images[0]
 

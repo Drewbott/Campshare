@@ -4,23 +4,16 @@ html, body {
     height: 100%;
     width: 100%;
 }
-#wrapper {
+/* #wrapper {
     background-color: #343a40;
     padding: 15px;
     height: auto;
     margin: 0px 100px; 
     text-align: center;
     color: white;
-}
-.copyright {
-    margin: 0 auto;
-}
-footer {
-    display: block;
-    height: 1px;
-    text-align: center;
-    background: #ebebeb;
-}
+} */
+
+
 .jumbotron {
     height: 600px;
     width: 100%;
@@ -28,6 +21,7 @@ footer {
     background-size: cover;
     background-image: url("https://jameskaiser.com/wp-content/uploads/2015/03/yosemite-camping.jpg");
 }
+
 .welcome {
     /* width: 25%; */
     margin-left: 50px;
@@ -37,11 +31,12 @@ footer {
     height: 200px;
     align-items: center;
 }
-.btn {
 
+.btn {
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
 /* .find-container {
     overflow: hidden;
 } */
@@ -53,12 +48,22 @@ footer {
     height: 100%;
 }
 
-.container {
-    margin: 0 auto;
-}
 .weather{
     border: dotted;
 }
-.card-body {
-    height:350px;
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 15px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 77%;
+}
+
+.copyright {
+    margin: 0 auto;
 }
