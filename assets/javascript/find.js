@@ -25,4 +25,7 @@ console.log("child_added")
 
   database.ref('posts/').on("child_added", function(snapshot) {
     console.log(snapshot.val().location);
+    console.log(snapshot.val().name)
+    console.log(snapshot.val().startDate)
+    console.log(snapshot.val().endDate)
   })
