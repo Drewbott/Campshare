@@ -27,4 +27,19 @@ var config = {
     console.log(snapshot.val().name)
     console.log(snapshot.val().startDate)
     console.log(snapshot.val().endDate)
+    displayParkInfo();
   })
+
+  function displayParkInfo() {
+    
+    var queryURL_NPS = "https://developer.nps.gov/api/v1/campgrounds?q=yosemite&api_key=5cZGKFkWtjCEhTA6R4fLucsuyuPYAkLhmZgeIYbw&limit=100&fields=latLong"
+
+    $.ajax({
+
+      url: queryURL_NPS,
+      method: "GET"
+    }).then(function(response) {
+      console.log(response.data)
+      console.log(response.data[0].name)
+    })
+  }
