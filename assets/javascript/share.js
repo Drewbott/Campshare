@@ -7,7 +7,7 @@ var config = {
     messagingSenderId: "850750063272"
   };
   firebase.initializeApp(config);
-  var db = firebase.database();
+  var database = firebase.database();
   
 firebase.auth().onAuthStateChanged(function(user) {
 if (user) {
@@ -28,23 +28,25 @@ if (user) {
         event.preventDefault();
         var name = displayName
         var location = $("#destination").val().trim();
-        var date = $("#length").val().trim();
+        var startDate = $("#startDate").val().trim();
+        var endDate = $("#endDate").val().trim();
         var numberPeople = $("#spaceAvailable").val().trim();
         var campingStyle = $("#typeOfSite").val().trim();
-        var notes = $("#notes").val().trim();
+        var requirements = $("#requirements").val().trim();
     
         console.log(displayName)
     
         var newCampsite = {
             name: name,
             location: location,
-            date: date,
+            startDate: startDate,
+            endDate: endDate,
             numberPeople: numberPeople,
             campingStyle: campingStyle,
-            notes: notes,
+            requirements: requirements,
         }
     
-        db.ref('users/' + uid).push(newCampsite);
+        database.ref('users/' + uid).push(newCampsite);
     
     })
 

@@ -15,7 +15,7 @@ var config = {
   messagingSenderId: "850750063272"
 };
 firebase.initializeApp(config);
-var db = firebase.database();
+var database = firebase.database();
 
 
 // //CREATE VARs for username and password capture from form:
@@ -85,15 +85,15 @@ var uiConfig = {
     //   firebase.auth.PhoneAuthProvider.PROVIDER_ID
     ],
     // Terms of service url.
-    tosUrl: 'index.html',
+    tosUrl: '#',
     // Privacy policy url.
-    privacyPolicyUrl: '<your-privacy-policy-url>'
+    privacyPolicyUrl: '#'
   };
   ui.start('#firebaseui-auth-container', uiConfig);
 
 var mainApp = {};
 var uid = null;
-var firebase = app_fireBase;
+// var firebase = app_fireBase;
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
