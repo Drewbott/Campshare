@@ -33,6 +33,7 @@ if (user) {
         var numberPeople = $("#spaceAvailable").val().trim();
         var campingStyle = $("#typeOfSite").val().trim();
         var requirements = $("#requirements").val().trim();
+        var userId = uid;
     
         console.log(displayName)
     
@@ -44,10 +45,11 @@ if (user) {
             numberPeople: numberPeople,
             campingStyle: campingStyle,
             requirements: requirements,
+            userId: userId
         }
     
-        database.ref('users/' + uid).push(newCampsite);
-    
+        database.ref('posts/').push(newCampsite);
+        window.location.replace("profile.html");
     })
 
 } else {
