@@ -10,15 +10,14 @@ var config = {
 
   var database = firebase.database();
 
-  database.ref().on("child_added", function(snapshot) {
-
-console.log("child_added")
+  firebase.database().ref('/posts').on('value', function(snapshot) {
+    console.log(snapshot);
 
     // Variables from database values
     var displayName = snapshot.val();
     var campDestination = snapshot.val();
     var numberPeople = snapshot.val();
-    var campingStyle = snapshot.val();    
+    var campingStyle = snapshot.val();
     var notes = snapshot.val();
 
   });
