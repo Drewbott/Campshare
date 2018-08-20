@@ -28,3 +28,17 @@ var config = {
     console.log(snapshot.val().startDate)
     console.log(snapshot.val().endDate)
   })
+
+    $(".camp-spot").attr(campDestination)
+    $('.camp-requirements').attr(displayName + campingStyle + notes + numberPeople)
+
+    database.ref('posts' + uid).pull(newCampsite);
+
+  var ref = database.ref("server/saving-data/fireblog/posts");
+
+// Attach an asynchronous callback to read the data at our posts reference
+ref.on("value", function(snapshot) {
+  console.log(snapshot.val());
+}, function (errorObject) {
+  console.log("The read failed: " + errorObject.code);
+});
