@@ -41,8 +41,11 @@ html, body {
     overflow: hidden;
 } */
 
-.map {
+
+
+#map {
     border: dotted;
+    height: 100%;
 }
 
 .weather{
