@@ -46,8 +46,9 @@ footer {
 
 
 
-.map {
+#map {
     border: dotted;
+    height: 100%;
 }
 
 .container {
@@ -55,4 +56,7 @@ footer {
 }
 .weather{
     border: dotted;
+}
+.card-body {
+    height:350px;
 }
