@@ -54,30 +54,27 @@ var config = {
     var park
     if (value == 1){
       park = 'yose';
-  
-    } else if (value == 2){
-        park = 'yose';
+    } 
+    else if (value == 2){
+        park = 'seki';
     }
     else if (value == 3){
-        park = 'yose';
+        park = 'redw';
     }
     else if (value == 4){
-        park = 'yose';
+        park = 'jotr';
     }
     else if (value == 5){
-        park = 'yose';
+        park = 'lavo';
     }
     else if (value == 6){
-        park = 'yose';
+        park = 'deva';
     }
     else if (value == 7){
-        park = 'yose';
+        park = 'pinn';
     }
     else if (value == 8){
-        park = 'yose';
-    }
-    else if (value == 9){
-        park = 'yose';
+        park = 'chis';
     }
     var queryURL = `https://developer.nps.gov/api/v1/parks?parkCode=${park}&api_key=5cZGKFkWtjCEhTA6R4fLucsuyuPYAkLhmZgeIYbw&limit=100`
     $.get(queryURL,function(response) {
@@ -97,24 +94,3 @@ var config = {
     })
   })
 
-//   $(".dropdown").onclick(function dropdownSelect() {
-//     var createDiv = $("<div class='findSite jumbotron'>")
-//     createDiv.text(campsiteName)
-//   })
-
-
-  //     $(".camp-spot").attr(campDestination)
-//     $('.camp-requirements').attr(displayName + campingStyle + notes + numberPeople)
-
-//     database.ref('users/' + uid).pull(newCampsite);
-
-//   });
-
-//   var ref = database.ref("server/saving-data/fireblog/posts");
-
-// // Attach an asynchronous callback to read the data at our posts reference
-// ref.on("value", function(snapshot) {
-//   console.log(snapshot.val());
-// }, function (errorObject) {
-//   console.log("The read failed: " + errorObject.code);
-// });
