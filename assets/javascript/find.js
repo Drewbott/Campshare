@@ -87,7 +87,7 @@ var config = {
         console.log(response.data[0].name)
         $(".park-title").text(response.data[0].name)
         database.ref('posts/').orderByChild('location').equalTo(park).on("value", (snapshot) => {
-            $('.park-title').empty()
+            $('.find-container').empty()
             console.log('CHICKEN');
             console.log(snapshot.val())
 
