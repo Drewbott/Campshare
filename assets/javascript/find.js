@@ -90,7 +90,7 @@ var config = {
             $('.park-title').empty()
 
             //creates a button to send to the host's email
-            $(".park-title").append('<button onclick=location.href="mailto:' + userEmail + '">Send Email to Host</button>')
+            // $(".park-title").append('<button onclick=location.href="mailto:' + userEmail + '">Send Email to Host</button>')
 
 
             snapshot.forEach(data => {
