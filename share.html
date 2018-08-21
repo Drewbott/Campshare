@@ -52,8 +52,17 @@
    <form>
       <div class="form-group">
         <h2> Share </h2>
-        <label for="Location">Location</label>
-        <input type="text" class="form-control" id="destination" aria-describedby="emailHelp" placeholder="Location">
+        <select id="my-select">
+            <option value="0" disabled="true" selected>California National Parks</option>
+            <option value="yose">Yosemite National Park</option>
+            <option value="seki">Sequoia National Park</option>
+            <option value="redw">Redwood National Park</option>
+            <option value="jotr">Joshua Tree National Park</option>
+            <option value="lavo">Lassen Volcanic National Park</option>
+            <option value="deva">Death Valley National Park</option>
+            <option value="pinn">Pinnacles National Park</option>
+            <option value="chis">Channel Islands National Park</option>
+          </select>
       </div>
       <div class="form-group">
         <label for="startDate">Start</label>
@@ -64,12 +73,16 @@
         <input type="text" class="form-control" id="endDate" placeholder="MM/DD/YYYY">
       </div>
       <div class="form-group">
-          <label for="length">Space Available</label>
-          <input type="text" class="form-control" id="spaceAvailable" placeholder="Space Available">
+          <label for="length">Looking to Share With</label>
+          <input type="text" class="form-control" id="spaceAvailable" placeholder="5 campers or less">
       </div>
       <div class="form-group">
-          <label for="typeOfSite">Type of Site</label>
-          <input type="text" class="form-control" id="typeOfSite" placeholder="Type of Site">
+          <label for="typeOfSite">Name of Campsite</label>
+          <input type="text" class="form-control" id="campsite" placeholder="Crane Flats">
+      </div>
+      <div class="form-group">
+          <label for="campingStyle">Camping Style</label>
+          <input type="text" class="form-control" id="campingStyle" placeholder="Relaxed, active, or loud">
       </div>
       <div class="form-group">
           <label for="requirements">Requirements</label>

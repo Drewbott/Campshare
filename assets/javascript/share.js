@@ -24,17 +24,30 @@ if (user) {
     console.log(uid) 
     $("#profileButton").text(displayName);
     $("#profileButton").attr("href", "#")
+
+
     $("#shareButton").on("click", function(event) { 
         event.preventDefault();
         var name = displayName
-        var location = $("#destination").val().trim();
+        // var location = $("#destination").val().trim();
         var startDate = $("#startDate").val().trim();
         var endDate = $("#endDate").val().trim();
         var numberPeople = $("#spaceAvailable").val().trim();
-        var campingStyle = $("#typeOfSite").val().trim();
+        var campsiteName = $("#campsite").val().trim();
         var requirements = $("#requirements").val().trim();
+        var campingStyle = $("#campingStyle").val().trim();
         var userId = uid;
         var userEmail = email
+        var location = document.getElementById("my-select");
+        var value = location.options[location.selectedIndex].value;
+        location = value
+        console.log(location)
+        // $("#my-select").on("value", function() {
+
+        //     console.log(value);
+        // })
+
+        
     
         console.log(displayName)
     
@@ -44,10 +57,11 @@ if (user) {
             startDate: startDate,
             endDate: endDate,
             numberPeople: numberPeople,
+            campsiteName: campsiteName,
             campingStyle: campingStyle,
             requirements: requirements,
             userId: userId,
-            userEmail: userEmail
+            userEmail: userEmail,
         }
     
         database.ref('posts/').push(newCampsite);
