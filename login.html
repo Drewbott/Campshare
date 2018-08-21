@@ -10,11 +10,52 @@
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
 </head>
 <body>
-
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">
+            <img src="https://img1.etsystatic.com/019/0/9202327/il_570xN.575075821_avr6.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Campshare
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <!-- <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="find.html">Find</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="share.html">Share</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="message.html">Message</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" id="profileButton" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    <br>
     <h1> Login </h1>
     <div id="firebaseui-auth-container"></div>
     <div id="loader">Loading...</div>
 
-    <script src="assets/javascript/login.js"></script>
+     <!-- Start of footer -->
+  <footer>
+    <div class="container">
+      <p class="copyright">Copyright 2018-Team 5</p>
+      </div>
+  </footer>
+  <!-- End of footer -->
+    
 </body>
+<script src="assets/javascript/login.js"></script>
 </html>

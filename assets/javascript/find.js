@@ -27,7 +27,7 @@ var config = {
     console.log(snapshot.val().name)
     console.log(snapshot.val().startDate)
     console.log(snapshot.val().endDate)
-    // displayParkInfo();
+    displayParkInfo();
   })
 
 
@@ -54,33 +54,31 @@ var config = {
     var park
     if (value == 1){
       park = 'yose';
-    } 
-    else if (value == 2){
-        park = 'seki';
+  
+    } else if (value == 2){
+        park = 'yose';
     }
     else if (value == 3){
-        park = 'redw';
+        park = 'yose';
     }
     else if (value == 4){
-        park = 'jotr';
+        park = 'yose';
     }
     else if (value == 5){
-        park = 'lavo';
+        park = 'yose';
     }
     else if (value == 6){
-        park = 'deva';
+        park = 'yose';
     }
     else if (value == 7){
-        park = 'pinn';
+        park = 'yose';
     }
     else if (value == 8){
-        park = 'chis';
+        park = 'yose';
     }
-
-//Drew's Code
-    recenter(value)
-
-    
+    else if (value == 9){
+        park = 'yose';
+    }
     var queryURL = `https://developer.nps.gov/api/v1/parks?parkCode=${park}&api_key=5cZGKFkWtjCEhTA6R4fLucsuyuPYAkLhmZgeIYbw&limit=100`
     $.get(queryURL,function(response) {
         //use reponse to populate divs
@@ -88,11 +86,6 @@ var config = {
         $(".park-title").text(response.data[0].name)
         database.ref('/posts').orderByChild('location').equalTo(park).on("value", (snapshot) => {
             $('.park-title').empty()
-
-            //creates a button to send to the host's email
-            $(".park-title").append('<button onclick=location.href="mailto:' + userEmail + '">Send Email to Host</button>')
-
-
             snapshot.forEach(data => {
                 console.log(data)
             //   var p = $('<p>')
@@ -103,6 +96,7 @@ var config = {
           })
     })
   })
+
 //   $(".dropdown").onclick(function dropdownSelect() {
 //     var createDiv = $("<div class='findSite jumbotron'>")
 //     createDiv.text(campsiteName)
