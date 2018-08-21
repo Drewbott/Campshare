@@ -49,7 +49,9 @@ footer {
     overflow: hidden;
 } */
 
-
+#my-select {
+margin: 20px 160px;
+}
 
 #map {
     border: dotted;
