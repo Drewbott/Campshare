@@ -112,38 +112,6 @@ var config = {
               console.log(childSnap.val().name)
             })
             
-
-
-
-
-            // snapshot.forEach(data => {
-            //     // console.log(data)
-            // //   var p = $('<p>')
-            // //   p.text(data.val().campingStyle)
-            // //  console.log(data.val().campingStyle)
-            // //   $('.park-title').append(p)
-            // })
           })
     })
   })
-//   $(".dropdown").onclick(function dropdownSelect() {
-//     var createDiv = $("<div class='findSite jumbotron'>")
-//     createDiv.text(campsiteName)
-//   })
-
-
-  //     $(".camp-spot").attr(campDestination)
-//     $('.camp-requirements').attr(displayName + campingStyle + notes + numberPeople)
-
-//     database.ref('users/' + uid).pull(newCampsite);
-
-//   });
-
-//   var ref = database.ref("server/saving-data/fireblog/posts");
-
-// // Attach an asynchronous callback to read the data at our posts reference
-// ref.on("value", function(snapshot) {
-//   console.log(snapshot.val());
-// }, function (errorObject) {
-//   console.log("The read failed: " + errorObject.code);
-// });
