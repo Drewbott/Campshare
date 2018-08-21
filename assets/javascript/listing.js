@@ -2,7 +2,7 @@
 
 
 
-
+<span class="sr-only">(current)</span> //nav shorthand for highlighting current page
 
 
 //DarkSky API

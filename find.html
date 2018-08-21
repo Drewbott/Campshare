@@ -1,51 +1,48 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <title>Campshare Site</title>
-<!-- Reset CSS -->
- <link rel="stylesheet" href="assets/css/reset.css">
-<!-- Boostrap Stylesheet -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<!-- Our CSS -->
-<link rel="stylesheet" href="assets/css/style.css">
-<!-- Firebase -->
-<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Campshare Site</title>
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <!-- Boostrap Stylesheet -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- Campshare Custom stylesheet -->
+        <link rel="stylesheet" href="assets/css/style.css">
+      </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">Campshare</a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home<!--<span class="sr-only">(current)</span>--></a>
-              </li>
-              <li class="nav-item">
-                  <a href="find.html" class="nav-link">Find</a>
-                </li>
-              <li class="nav-item">
-                <a href="share.html" class="nav-link">Share</a>
-              </li>
-            </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+  <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand logo" href="index.html">
+          <img src="https://img1.etsystatic.com/019/0/9202327/il_570xN.575075821_avr6.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+          Campshare
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="share.html">Share</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="find.html">Find</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" id="profileButton" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <br>
 
     <!-- <div class="dropdown">
@@ -125,24 +122,21 @@
   </footer>
 </div>  
  <br>
+<!-- End of footer -->
 
-
-
-
-    <!-- End of footer -->
-    <script type="text/javascript" src="assets/javascript/maps.js"></script>  
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAONZYnyHUjy1Sng-pxNkStJ_NBkLM83Dw&callback=initMap"
-    async defer></script>
+    <!-- Google Maps API-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAONZYnyHUjy1Sng-pxNkStJ_NBkLM83Dw&callback=initMap" async defer></script>
+    <!-- Bootstrap CDN -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <!-- jQuery bootstrap-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
     <!-- Skycons JS-->
     <script type="text/javascript" src="assets/javascript/skycons.js"></script>
     <!--Campshare JS-->
+    <script type="text/javascript" src="assets/javascript/maps.js"></script>  
     <script src="assets/javascript/find.js"></script>
-    
-
   </body>
 </html>
