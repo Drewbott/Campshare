@@ -49,7 +49,9 @@ footer {
     overflow: hidden;
 } */
 
-
+#my-select {
+    margin: 20px 160px;
+}
 
 #map {
     border: dotted;
@@ -72,15 +74,27 @@ footer {
 footer {
     background-color: #343a40;
     color: white;
-    padding: 15px;
+    text-align: center;
+}
+/*   padding: 15px;
     margin: 0 auto;
     display: block;
-    text-align: center;
+
     position: fixed;
     bottom: 0;
     width: 77%;
+} */
+
+/* .copyright {
+    margin: 0 auto;
+} */
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 
-.copyright {
-    margin: 0 auto;
+.temper {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
 }
