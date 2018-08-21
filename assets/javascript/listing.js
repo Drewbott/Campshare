@@ -23,3 +23,8 @@ weatherIcon = response.daily.data.icon.val(); //and use switch statement to disp
 })
 
 time
+
+
+
+
+
