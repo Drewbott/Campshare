@@ -152,9 +152,14 @@ function weatherCall(){
               campDiv3.append("<p>" + childSnap.val().name + " wants to share their site at with "  + childSnap.val().numberPeople + " from " + childSnap.val().startDate + " to " + childSnap.val().endDate + ". " + childSnap.val().name + " camping style is " + childSnap.val().campingStyle + " & wants you to bring " + childSnap.val().requirements + ".")
               //creates a button to send to the host's email
               campDiv3.append('<button class="contact-btn" onclick=location.href="mailto:' + childSnap.val().userEmail + '">Send Email to Host</button>')
-
+            
+              var skycons = new Skycons({"color":"white"})
               let weatDiv = $("<div>")
-              weatDiv.html(<canvas width="125" height="125"></canvas>)
+              let weatCan = $("<canvas>")
+              weatCan.attr("width", "125")
+              weatCan.attr("height", "125")
+              weatCan.append(skycons.())
+              weatDiv.append(weatCan)
               $(".find-container").append()
               console.log(childSnap.val().name)
             })
