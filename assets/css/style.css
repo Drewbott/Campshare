@@ -86,3 +86,13 @@ footer {
 .copyright {
     margin: 0 auto;
 }
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.temper {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
