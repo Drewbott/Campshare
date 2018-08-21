@@ -38,7 +38,7 @@ if (user) {
         var campingStyle = $("#campingStyle").val().trim();
         var userId = uid;
         var userEmail = email
-        var location = document.getElementById("my-select");
+        var location = document.getElementById("my-select-share");
         var value = location.options[location.selectedIndex].value;
         location = value
         console.log(location)
@@ -65,7 +65,7 @@ if (user) {
         }
     
         database.ref('posts/').push(newCampsite);
-        window.location.replace("profile.html");
+        window.location.replace("find.html");
     })
 
 } else {
