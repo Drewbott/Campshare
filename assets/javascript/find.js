@@ -167,3 +167,43 @@ function weatherCall(){
           })
     })
   })
+
+firebase.auth().onAuthStateChanged(function(user) {
+if (user) {
+    // User is signed in.
+    var displayName = user.displayName;
+    var email = user.email;
+    var emailVerified = user.emailVerified;
+    var photoURL = user.photoURL;
+    var isAnonymous = user.isAnonymous;
+    var uid = user.uid;
+    var providerData = user.providerData;
+    // ...
+    console.log(displayName)
+    console.log(uid) 
+    $("#profileButton").text(displayName);
+    $("#profileButton").attr("href", "#")
+    $("#logoutButton").show()
+} else {
+    // User is signed out.
+    // ...
+    $("#logoutButton").hide()
+}
+});
+
+$("#logoutButton").on("click", function() {
+    firebase.auth().signOut();
+    location.reload();
+})
+
+$("#share-button-header").on("click", function() {
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+        // User is signed in.
+        window.location.replace("share.html")
+        } else {
+        // User is signed out.
+        window.location.replace("login.html")
+        }
+    });
+})
