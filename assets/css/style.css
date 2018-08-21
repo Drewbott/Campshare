@@ -68,8 +68,8 @@ footer {
 }
 
 #map {
-    border: dotted;
     height: 50%;
+    width: 1110px;
 }
 
 .weather{

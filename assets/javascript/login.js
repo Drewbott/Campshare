@@ -102,7 +102,6 @@ firebase.auth().onAuthStateChanged(function(user) {
     else {
         uid - null;
       // redirect to login page
-      window.location.replace("login.html");
     }
 
     function logOut() {
