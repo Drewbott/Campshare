@@ -27,7 +27,7 @@ var config = {
     console.log(snapshot.val().name)
     console.log(snapshot.val().startDate)
     console.log(snapshot.val().endDate)
-    displayParkInfo();
+    // displayParkInfo();
   })
 
 
@@ -76,6 +76,11 @@ var config = {
     else if (value == 8){
         park = 'chis';
     }
+
+//Drew's Code
+    recenter(value)
+
+    
     var queryURL = `https://developer.nps.gov/api/v1/parks?parkCode=${park}&api_key=5cZGKFkWtjCEhTA6R4fLucsuyuPYAkLhmZgeIYbw&limit=100`
     $.get(queryURL,function(response) {
         //use reponse to populate divs
@@ -83,6 +88,11 @@ var config = {
         $(".park-title").text(response.data[0].name)
         database.ref('/posts').orderByChild('location').equalTo(park).on("value", (snapshot) => {
             $('.park-title').empty()
+
+            //creates a button to send to the host's email
+            $(".park-title").append('<button onclick=location.href="mailto:' + userEmail + '">Send Email to Host</button>')
+
+
             snapshot.forEach(data => {
                 console.log(data)
             //   var p = $('<p>')
@@ -93,4 +103,24 @@ var config = {
           })
     })
   })
+//   $(".dropdown").onclick(function dropdownSelect() {
+//     var createDiv = $("<div class='findSite jumbotron'>")
+//     createDiv.text(campsiteName)
+//   })
 
+
+  //     $(".camp-spot").attr(campDestination)
+//     $('.camp-requirements').attr(displayName + campingStyle + notes + numberPeople)
+
+//     database.ref('users/' + uid).pull(newCampsite);
+
+//   });
+
+//   var ref = database.ref("server/saving-data/fireblog/posts");
+
+// // Attach an asynchronous callback to read the data at our posts reference
+// ref.on("value", function(snapshot) {
+//   console.log(snapshot.val());
+// }, function (errorObject) {
+//   console.log("The read failed: " + errorObject.code);
+// });
