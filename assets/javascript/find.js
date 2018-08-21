@@ -105,7 +105,7 @@ var config = {
               campDiv3.append(campDiv3img)
               campDiv3.append("<p>" + childSnap.val().name + " wants to share their site at with "  + childSnap.val().numberPeople + " from " + childSnap.val().startDate + " to " + childSnap.val().endDate + ". " + childSnap.val().name + " camping style is " + childSnap.val().campingStyle + " & wants you to bring " + childSnap.val().requirements + ".")
               //creates a button to send to the host's email
-              campDiv3.append('<button onclick=location.href="mailto:' + childSnap.val().userEmail + '">Send Email to Host</button>')
+              campDiv3.append('<button class="contact-btn" onclick=location.href="mailto:' + childSnap.val().userEmail + '">Send Email to Host</button>')
 
               weatherDiv =
               $(".park-title").append(campDiv, campDiv2, campDiv3)

@@ -50,7 +50,21 @@ footer {
 } */
 
 #my-select {
-    margin: 20px 160px;
+    margin: 0px 165px 20px;
+    background: slategray;
+    color: white;
+    font-size: 20px;
+}
+
+#my-select-share {
+    background: slategray;
+    color: white;
+    font-size: 20px;
+}
+
+.contact-btn {
+    background: slategray;
+    color: white;
 }
 
 #map {
