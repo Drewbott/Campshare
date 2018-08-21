@@ -54,6 +54,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 
 
+
 // $.ajax({
 //     url: queryURL_NPS,
 //     method: "GET"
