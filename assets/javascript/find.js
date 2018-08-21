@@ -54,30 +54,27 @@ var config = {
     var park
     if (value == 1){
       park = 'yose';
-  
-    } else if (value == 2){
-        park = 'yose';
+    } 
+    else if (value == 2){
+        park = 'seki';
     }
     else if (value == 3){
-        park = 'yose';
+        park = 'redw';
     }
     else if (value == 4){
-        park = 'yose';
+        park = 'jotr';
     }
     else if (value == 5){
-        park = 'yose';
+        park = 'lavo';
     }
     else if (value == 6){
-        park = 'yose';
+        park = 'deva';
     }
     else if (value == 7){
-        park = 'yose';
+        park = 'pinn';
     }
     else if (value == 8){
-        park = 'yose';
-    }
-    else if (value == 9){
-        park = 'yose';
+        park = 'chis';
     }
 
 //Drew's Code
