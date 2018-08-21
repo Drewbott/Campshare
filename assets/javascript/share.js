@@ -34,6 +34,7 @@ if (user) {
         var campingStyle = $("#typeOfSite").val().trim();
         var requirements = $("#requirements").val().trim();
         var userId = uid;
+        var userEmail = email
     
         console.log(displayName)
     
@@ -45,7 +46,8 @@ if (user) {
             numberPeople: numberPeople,
             campingStyle: campingStyle,
             requirements: requirements,
-            userId: userId
+            userId: userId,
+            userEmail: userEmail
         }
     
         database.ref('posts/').push(newCampsite);
