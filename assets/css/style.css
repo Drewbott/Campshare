@@ -19,7 +19,7 @@ footer {
     height: 1px;
     text-align: center;
 }
-} */
+*/
 
 
 .jumbotron {
@@ -78,9 +78,10 @@ footer {
     text-align: center;
     position: fixed;
     bottom: 0;
-    width: 77%;
+    width: 1024px;
+    
 }
 
-.copyright {
+/* .copyright {
     margin: 0 auto;
-}
+} */
