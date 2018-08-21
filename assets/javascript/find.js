@@ -51,31 +51,77 @@ var config = {
     var e = document.getElementById("my-select");
     var value = e.options[e.selectedIndex].value;
     console.log(value);
-    var park
+    var park;
+    var weatherLat= "";
+    var weatherLong = "";
     if (value == 1){
       park = 'yose';
+      weatherLat = "37.8526119";
+      weatherLong = "-119.5420258";
     } 
     else if (value == 2){
         park = 'seki';
+        weatherLat = "36.4907037";
+        weatherLong = "-118.827748";
     }
     else if (value == 3){
         park = 'redw';
+        weatherLat = "41.1709195";
+        weatherLong = "-123.9769672";
     }
     else if (value == 4){
         park = 'jotr';
+        weatherLat = "33.9002331";
+        weatherLong = "-116.1415649";
     }
     else if (value == 5){
         park = 'lavo';
+        weatherLat = "40.4971386";
+        weatherLong = "-121.5506459";
     }
     else if (value == 6){
         park = 'deva';
+        weatherLat = "36.7243049";
+        weatherLong = "-117.2581319";
     }
     else if (value == 7){
         park = 'pinn';
+        weatherLat = "36.4788925";
+        weatherLong = "-121.2241197";
     }
     else if (value == 8){
         park = 'chis';
+        weatherLat = "33.9255922";
+        weatherLong = "-120.0337459";
     }
+// Weather and Skycon
+
+var coords = {
+    "1":[37.8526119, -119.5420258, 10],
+    "2":[36.4907037, -118.827748, 10],
+    "3":[41.1709195, -123.9769672, 11],
+    "4":[33.9002331, -116.1415649, 10],
+    "5":[40.4971386, -121.5506459, 10],
+    "6":[36.7243049, -117.2581319, 8],
+    "7":[36.4788925, -121.2241197, 12],
+    "8":[33.9255922, -120.0337459, 9],
+  
+  }
+function weatherCall(){
+  var origTime = childSnap.val().startDate;//unix time conversion for 1st day of stay;
+  var time = moment(origTime,MM-DD-YYYY);
+  var APIKey = "cd0b8764bd785f33f097cb738485aa0d";
+  var queryUrl_weather = "https://api.darksky.net/forecast/" + APIKey + "/" + weatherLat + "," + weatherLong + "," + time + "?exclude=currently,minutely,hourly,alerts,flags";
+  
+  $.ajax({
+    url: queryUrl_weather,
+    method: "GET"
+  }).then(function(response){
+  
+  
+  weatherIcon = response.daily.data.icon.val(); //and use switch statement to display the correct icons
+  })
+}
 
 //Drew's Code
     recenter(value)
@@ -107,8 +153,9 @@ var config = {
               //creates a button to send to the host's email
               campDiv3.append('<button class="contact-btn" onclick=location.href="mailto:' + childSnap.val().userEmail + '">Send Email to Host</button>')
 
-              weatherDiv =
-              $(".find-container").append(campDiv, campDiv2, campDiv3)
+              let weatDiv = $("<div>")
+              weatDiv.html(<canvas width="125" height="125"></canvas>)
+              $(".find-container").append()
               console.log(childSnap.val().name)
             })
             
