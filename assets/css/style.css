@@ -74,18 +74,20 @@ margin: 20px 160px;
 footer {
     background-color: #343a40;
     color: white;
-    padding: 15px;
+    text-align: center;
+}
+/*   padding: 15px;
     margin: 0 auto;
     display: block;
-    text-align: center;
+
     position: fixed;
     bottom: 0;
     width: 77%;
-}
+} */
 
-.copyright {
+/* .copyright {
     margin: 0 auto;
-}
+} */
 
 .logo {
     font-family: 'Roboto', sans-serif;
