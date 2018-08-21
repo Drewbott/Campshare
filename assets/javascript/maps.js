@@ -1,6 +1,5 @@
-var SFLL = [37.7577627, -122.4726194]
+var cali = [37.1925702, -123.8109914, 5]
 SOURCE_OF_TRUTH = {
-  "-1":[37.1925702, -123.8109914, 5],
   "1":[37.8526119, -119.5420258, 10],
   "2":[36.4907037, -118.827748, 10],
   "3":[41.1709195, -123.9769672, 11],
@@ -15,8 +14,8 @@ SOURCE_OF_TRUTH = {
 var map;
       function initMap() {
        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: SOURCE_OF_TRUTH["-1"][0], lng: SOURCE_OF_TRUTH["-1"][1]},
-          zoom: SOURCE_OF_TRUTH["-1"][2]});
+          center: {lat: cali[0], lng: cali[1]},
+          zoom: cali[2]});
           for (var place in SOURCE_OF_TRUTH){
           var marker = new google.maps.Marker({position: {lat: SOURCE_OF_TRUTH[place][0], lng: SOURCE_OF_TRUTH[place][1]}, map: map})
 
