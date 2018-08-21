@@ -17,11 +17,9 @@ var map;
        map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: SOURCE_OF_TRUTH["-1"][0], lng: SOURCE_OF_TRUTH["-1"][1]},
           zoom: SOURCE_OF_TRUTH["-1"][2]});
-          var marker = new google.maps.Marker
-          for (var i=[""]; i<SOURCE_OF_TRUTH.length; i++){
-          ({position: {lat: SOURCE_OF_TRUTH[i][0], lng: SOURCE_OF_TRUTH[i][1]}, map: map})
+          
         }
-      }
+      
 
       function recenter(parkCode) {
         console.log(parkCode, SOURCE_OF_TRUTH[parkCode])
