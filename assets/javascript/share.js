@@ -24,7 +24,7 @@ if (user) {
     console.log(uid) 
     $("#profileButton").text(displayName);
     $("#profileButton").attr("href", "#")
-
+    $("#logoutButton").show()
 
     $("#shareButton").on("click", function(event) { 
         event.preventDefault();
@@ -71,6 +71,25 @@ if (user) {
 } else {
     // User is signed out.
     // ...
+    $("#logoutButton").hide()
+
 }
 });
 
+
+$("#logoutButton").on("click", function() {
+    firebase.auth().signOut();
+    window.location.replace("index.html")
+})
+
+$("#share-button-header").on("click", function() {
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+        // User is signed in.
+        window.location.replace("share.html")
+        } else {
+        // User is signed out.
+        window.location.replace("login.html")
+        }
+    });
+})
