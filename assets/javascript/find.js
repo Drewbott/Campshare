@@ -89,11 +89,12 @@ var config = {
         database.ref('/posts').orderByChild('location').equalTo(park).on("value", (snapshot) => {
             $('.park-title').empty()
 
+            
             //creates a button to send to the host's email
-            $(".park-title").append('<button onclick=location.href="mailto:' + userEmail + '">Send Email to Host</button>')
+            // $(".park-title").append('<button onclick=location.href="mailto:' + userEmail + '">Send Email to Host</button>')
 
 
-            snapshot.forEach(data => {
+            // snapshot.forEach(data => {
                 console.log(data)
             //   var p = $('<p>')
             //   p.text(data.val().campingStyle)
@@ -102,7 +103,6 @@ var config = {
             })
           })
     })
-  })
 //   $(".dropdown").onclick(function dropdownSelect() {
 //     var createDiv = $("<div class='findSite jumbotron'>")
 //     createDiv.text(campsiteName)
