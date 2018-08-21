@@ -17,7 +17,10 @@ var map;
        map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: SOURCE_OF_TRUTH["-1"][0], lng: SOURCE_OF_TRUTH["-1"][1]},
           zoom: SOURCE_OF_TRUTH["-1"][2]});
-          
+          for (var place in SOURCE_OF_TRUTH){
+          var marker = new google.maps.Marker({position: {lat: SOURCE_OF_TRUTH[place][0], lng: SOURCE_OF_TRUTH[place][1]}, map: map})
+
+        }
         }
       
 
