@@ -87,7 +87,7 @@ var config = {
         console.log(response.data[0].name)
         $(".park-title").text(response.data[0].name)
         database.ref('posts/').orderByChild('location').equalTo(park).on("value", (snapshot) => {
-            $('.park-title').empty()
+            $('.find-container').empty()
             console.log('CHICKEN');
             console.log(snapshot.val())
 
@@ -108,7 +108,7 @@ var config = {
               campDiv3.append('<button onclick=location.href="mailto:' + childSnap.val().userEmail + '">Send Email to Host</button>')
 
               weatherDiv =
-              $(".park-title").append(campDiv, campDiv2, campDiv3)
+              $(".find-container").append(campDiv, campDiv2, campDiv3)
               console.log(childSnap.val().name)
             })
             
