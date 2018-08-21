@@ -6,7 +6,11 @@ The site was intended to help user identify National Park Camp Sites with in Cal
 
 Tools:
 Bootstrap
+jQuery
 Firebase
+moment
+Time
+Please hack the site
 
 Usefulness: 
 Pair user with with National Park Camp Sites
