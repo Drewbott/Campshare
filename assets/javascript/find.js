@@ -79,6 +79,11 @@ var config = {
     else if (value == 9){
         park = 'yose';
     }
+
+//Drew's Code
+    recenter(value)
+
+    
     var queryURL = `https://developer.nps.gov/api/v1/parks?parkCode=${park}&api_key=5cZGKFkWtjCEhTA6R4fLucsuyuPYAkLhmZgeIYbw&limit=100`
     $.get(queryURL,function(response) {
         //use reponse to populate divs
