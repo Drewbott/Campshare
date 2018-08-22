@@ -16,8 +16,8 @@
       </head>
 
 <body>
-  <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="fluid-container header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mx-5">
         <a class="navbar-brand logo" href="index.html">
           <img src="https://img1.etsystatic.com/019/0/9202327/il_570xN.575075821_avr6.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
           Campshare
@@ -45,23 +45,6 @@
     </div>
     <br>
 
-    <!-- <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         California National Parks
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <button class="dropdown-item" type="button" value="Yosemite">Yosemite National Park</button>
-          <button class="dropdown-item" type="button" value="Sequoia">Sequoia National Park</button>
-          <button class="dropdown-item" type="button" value="Redwood">Redwood National Park</button>
-          <button class="dropdown-item" type="button" value="Joshua Tree">Joshua Tree National Park</button>
-          <button class="dropdown-item" type="button" value="Kings Canyon">Kings Canyon National Park</button>
-          <button class="dropdown-item" type="button" value="Lassen Volcanic">Lassen Volcanic National Park</button>
-          <button class="dropdown-item" type="button" value="Death Valley">Death Valley National Park</button>
-          <button class="dropdown-item" type="button" value="Pinnacles">Pinnacles National Park</button>
-          <button class="dropdown-item" type="button" value="Channel Islands">Channel Islands National Park</button>
-        </div>
-       </div> -->
-
       <select id="my-select">
         <option value="0" disabled="true" selected>California National Parks</option>
         <option value="1">Yosemite National Park</option>
@@ -75,15 +58,45 @@
       </select>
 
 
-      <div class="container" id="map">
+      <div class="container" id="map"></div>
 
+    <!-- <div class="park-title"></div> -->
+
+    <div class="container">
+
+      <div class="find-container">
+
+        </div>
+     </div>
+
+<footer class="navbar mx-auto fixed-bottom">
+    <div id="wrapper" class="container" style="width: 210px">
+      <p class="copyright">Copyright 2018-Team 5</p>
       </div>
+  </footer>
+</div>  
+ <br>
+<!-- End of footer -->
 
-    <div class="park-title">
+    <!-- Google Maps API-->
+    <script type="text/javascript" src="assets/javascript/maps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAONZYnyHUjy1Sng-pxNkStJ_NBkLM83Dw&callback=initMap" async defer></script>
+    <!-- Bootstrap CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- jQuery bootstrap-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- moment.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+    <!-- Skycons JS-->
+    <script type="text/javascript" src="assets/javascript/skycons.js"></script>
+    <!--Campshare JS-->
+    <script src="assets/javascript/find.js"></script>
+  </body>
+</html>
 
-    </div>
-<div class="container">
-<div class="find-container">
     <!-- <div class="card">
         <div class="row">
           <div class="col-md-3">
@@ -110,34 +123,3 @@
           </div>
         </div> 
       </div> -->
-  </div>
-</div>
-
-<br>
-<footer>
-    <div id="wrapper" class="container">
-      <p class="copyright">Copyright 2018-Team 5</p>
-      </div>
-  </footer>
-</div>  
- <br>
-<!-- End of footer -->
-
-    <!-- Google Maps API-->
-    <script type="text/javascript" src="assets/javascript/maps.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAONZYnyHUjy1Sng-pxNkStJ_NBkLM83Dw&callback=initMap" async defer></script>
-    <!-- Bootstrap CDN -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <!-- jQuery bootstrap-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!-- moment.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
-    <!-- Skycons JS-->
-    <script type="text/javascript" src="assets/javascript/skycons.js"></script>
-    <!--Campshare JS-->
-    <script src="assets/javascript/find.js"></script>
-  </body>
-</html>
