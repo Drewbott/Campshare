@@ -149,7 +149,7 @@ function weatherCall(){
               campDiv3img.attr("src", response.data[0].images[0].url) // call snapshot.val for camp imgUrl
               campDiv3img.attr("class","card-img-top")
               campDiv3.append(campDiv3img)
-              campDiv3.append("<p>" + childSnap.val().name + " wants to share their site at with "  + childSnap.val().numberPeople + " from " + childSnap.val().startDate + " to " + childSnap.val().endDate + ". " + childSnap.val().name + " camping style is " + childSnap.val().campingStyle + " & wants you to bring " + childSnap.val().requirements + ".")
+              campDiv3.append("<p>" + childSnap.val().name + " wants to share their site at " + childSnap.val().campsiteName + " with "  + childSnap.val().numberPeople + " other campers from " + childSnap.val().startDate + " to " + childSnap.val().endDate + ". " + childSnap.val().name + " camping style is " + childSnap.val().campingStyle + " & wants you to bring " + childSnap.val().requirements + ".")
               //creates a button to send to the host's email
               campDiv3.append('<button class="contact-btn" onclick=location.href="mailto:' + childSnap.val().userEmail + '">Send Email to Host</button>')
             
