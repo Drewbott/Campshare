@@ -158,7 +158,7 @@ function weatherCall(){
               let weatCan = $("<canvas>")
               weatCan.attr("width", "125")
               weatCan.attr("height", "125")
-              weatCan.append(skycons.())
+              // weatCan.append(skycons.())
               weatDiv.append(weatCan)
               $(".find-container").append()
               console.log(childSnap.val().name)
