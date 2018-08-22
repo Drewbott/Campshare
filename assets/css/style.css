@@ -27,6 +27,7 @@ footer {
     width: 100%;
     /* margin-right: 50px; */
     background-size: cover;
+    background-position: center bottom;
     /* background-image: url("https://jameskaiser.com/wp-content/uploads/2015/03/yosemite-camping.jpg"); */
 }
 
@@ -77,11 +78,11 @@ footer {
 }
 
 #share {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 #find {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 footer {
     background-color: #343a40;
@@ -122,3 +123,21 @@ footer {
     top: 30%;
     bottom: auto;
 }
+.card-title {
+    color: black;
+}
+
+.card-text {
+    color: black;
+}
+
+.welcome {
+    top: 10%;
+    bottom: auto;
+    font-family: 'Roboto', sans-serif;
+
+}
+.title:nth-child(2) {
+    color:teal;
+}
+ 
