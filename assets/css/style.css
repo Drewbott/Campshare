@@ -4,6 +4,11 @@ html, body {
     height: 100%;
     width: 100%;
 }
+
+.header {
+    background: #343a40;
+}
+
 /* #wrapper {
     background-color: #343a40;
     padding: 15px;
@@ -85,11 +90,24 @@ footer {
     background-color: rgba(255, 255, 255, 0.7);
     margin-top: 150px;
 }
+
+.camp-card {
+    margin: 20px 0px;
+    align-content: center;
+    background-size: cover;
+}
+
+.media-body {
+    overflow: hidden;
+}
+
+
 footer {
     background-color: #343a40;
     color: white;
     text-align: center;
 }
+
 /*   padding: 15px;
     margin: 0 auto;
     display: block;

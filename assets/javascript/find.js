@@ -141,18 +141,19 @@ function weatherCall(){
               campDiv = $("<div>")
               campDiv.attr("class","card")
               campDiv2 = $("<div>")
-              campDiv2.attr("class","row")
+              campDiv2.attr("class","row camp-card")
               campDiv3 = $("<div>")
-              campDiv3.attr("class","col-md-3")
+              campDiv3.attr("class","col-md-12 mb-5 border media-body")
 
-              campDiv3img = $("<img>")
+              campDiv3img = $("<img class='park-image'>")
               campDiv3img.attr("src", response.data[0].images[0].url) // call snapshot.val for camp imgUrl
-              campDiv3img.attr("class","card-img-top")
+              campDiv3img.attr("class","card-img-top park-image")
+              $(campDiv3img).css({'width': '400px', 'float': 'left'})
               campDiv3.append(campDiv3img)
               campDiv3.append("<p>" + childSnap.val().name + " wants to share their site at " + childSnap.val().campsiteName + " with "  + childSnap.val().numberPeople + " other campers from " + childSnap.val().startDate + " to " + childSnap.val().endDate + ". " + childSnap.val().name + " camping style is " + childSnap.val().campingStyle + " & wants you to bring " + childSnap.val().requirements + ".")
               //creates a button to send to the host's email
-              campDiv3.append('<button class="contact-btn" onclick=location.href="mailto:' + childSnap.val().userEmail + '">Send Email to Host</button>')
-            
+              campDiv3.append('<button class="contact-btn mb-2" onclick=location.href="mailto:' + childSnap.val().userEmail + '">Send Email to Host</button>')
+
               var skycons = new Skycons({"color":"white"})
               let weatDiv = $("<div>")
               let weatCan = $("<canvas>")
